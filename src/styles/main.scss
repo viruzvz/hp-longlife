@@ -25,3 +25,28 @@ section {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.here {
+  animation: counter 5s forwards ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+.here::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 6000;
+  }
+}
