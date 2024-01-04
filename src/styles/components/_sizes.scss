@@ -1,0 +1,90 @@
+$-xs: 0.75rem;  /* 12px */
+$-sm: 0.875rem; /* 14px */
+$-base: 1rem; /* 16px */
+$-lg: 1.125rem; /* 18px */
+$-xl: 1.25rem; /* 20px */
+$-xl2: 1.5rem; /* 24px */
+$-xl3: 1.875rem; /* 30px */
+$-xl4: 2.25rem; /* 36px */
+$-xl5: 3rem; /* 48px */
+$-xl6: 3.75rem; /* 60px */
+$-xl7: 4.5rem; /* 72px */
+$-xl8: 6rem; /* 96px */
+$-xl9: 8rem; /* 128px */
+
+.text-xs,
+.text-sm,
+.text-base,
+.text-lg,
+.text-xl,
+.text-xl2,
+.text-xl3 {
+	line-height: 1.55rem;
+}
+
+.text-xl4,
+.text-xl5,
+.text-xl6,
+.text-xl7,
+.text-xl8,
+.text-xl9 {
+	line-height: 3.5rem;
+}
+
+.text-xs {
+	font-size: $-xs;
+}
+
+.text-sm {	
+	font-size: $-sm;
+}
+
+.text-base {
+	font-size: $-base;
+}
+
+.text-lg	{
+	font-size: $-lg;
+}
+
+.text-xl {	
+	font-size: $-xl;
+}
+
+.text-xl2	{ 
+	font-size: $-xl2;
+}
+
+.text-xl3	{
+	font-size: $-xl3;
+}
+
+.text-xl4 {	
+	font-size: $-xl4;
+}
+
+.text-xl5 {	
+	font-size: $-xl5;
+}
+
+.text-xl6 {	
+	font-size: $-xl4;
+	@media (min-width: 768px) {
+		font-size: $-xl6;
+	}
+}
+
+.text-xl7 {	
+	font-size: $-xl5;
+	@media (min-width: 768px) {
+		font-size: $-xl7;
+	}
+}
+
+.text-xl8 {	
+	font-size: $-xl8;
+}
+
+.text-xl9 {	
+	font-size: $-xl9;
+}

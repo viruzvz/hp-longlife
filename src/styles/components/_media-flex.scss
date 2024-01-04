@@ -1,0 +1,13 @@
+.media-flex, 
+.media--reverse {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media--reverse > .media-object{
+  order: 1
+}
+
+.media-caption {
+  flex: 1;
+}

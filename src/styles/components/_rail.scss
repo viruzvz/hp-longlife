@@ -1,0 +1,39 @@
+.Rail {
+  display: flex;
+  align-items: center;
+
+  > :not(:first-child) {
+    padding-left: 0.5em;
+  }
+
+  > :not(:last-child) {
+    padding-right: 0.5em;
+  }
+}
+
+ul.Rail {
+  padding-left: 0;
+  list-style: none;
+}
+
+.Rail--fenced {
+  > :not(:first-child) {
+    border-left: 1px solid #999;
+  }
+}
+
+// .Rail--stackable {
+//   @include media-breakpoint-down($checkpoint-down) {
+//     flex-direction: column;
+//     align-items: flex-start;
+//     line-height: 2em;
+//   }
+
+//   > :not(:first-child) {
+//     @include media-breakpoint-down($checkpoint-down) {
+//       padding-left: 0;
+//       padding-right: 0;
+//       border: none;
+//     }
+//   }
+// }

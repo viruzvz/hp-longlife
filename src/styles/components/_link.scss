@@ -1,0 +1,106 @@
+.link {
+	transition: $transition;
+  text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+}
+
+.link-footer {
+  color: #fff;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.link-nav {
+  text-transform: uppercase;
+  color: #333;
+	font-size: 16px;
+	padding: 10px 15px;
+	font-weight: 500;
+  &:hover {
+    color: $c-secondary;
+  }
+}
+
+.link-facebook,
+.link-whatsapp,
+.link-youtube,
+.link-instagram {
+  &:hover {
+    color: $c-primary;
+  }
+}
+
+.link-facebook {
+  color: $facebook;
+}
+
+.link-whatsapp {
+  color: $whatsapp;
+}
+
+.link-youtube {
+  color: $youtube;
+}
+
+.link-instagram {
+  color: $instagram;
+}
+
+.link-primary {
+  color: $c-primary;
+  &:hover {
+    color: $c-secondary;
+  }
+}
+
+.link-tertiary {
+  color: $c-tertiary;
+  &:hover {
+    color: $c-primary;
+  }
+}
+
+.link-white {
+  color: white;
+  &:hover {
+    color: #cccccc;
+  }
+}
+
+.link-card {
+  figure {
+    background: $c-secondary;
+    border-radius: 4px;
+    img {
+      opacity: 1;
+      transition: .3s ease-in-out;
+    }
+    &:hover img {
+      opacity: .5;
+    }
+  }
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 4px solid $c-secondary;
+  color: $c-primary;
+}
+
+.btn-primaryTheme {
+  background-color: $c-primary;
+  border-color: adjust-hue($c-primary, 5deg);
+  color: #fff;
+  transition: $transition;
+  border-radius: 0;
+
+  &:hover {
+    color: #fff;
+    background-color: adjust-hue($c-primary, 5deg);
+    border-color: adjust-hue($c-primary, 10deg);
+  }
+}
+
