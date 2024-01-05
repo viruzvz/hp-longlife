@@ -2,19 +2,19 @@
 import * as bootstrap from 'bootstrap'
 
 // Remove the transition class
-const square = document.querySelector('.status-fire-js');
-square.classList.remove('here');
+const count = document.querySelector('.status-fire-js');
+count.classList.remove('animation');
 
 // Create the observer, same as before:
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      square.classList.add('here');
+      count.classList.add('animation');
       return;
     }
 
-    square.classList.remove('here');
+    count.classList.remove('animation');
   });
 });
 
-observer.observe(document.querySelector('.square-wrapper'));
+observer.observe(document.querySelector('.count-wrapper'));

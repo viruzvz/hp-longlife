@@ -14,6 +14,8 @@
 @import "components/link";
 @import "components/embed";
 @import "components/media-flex";
+@import "components/counter-animation";
+@import "components/iconbox";
 
 
 // default page styles
@@ -26,27 +28,17 @@ section {
   padding-bottom: 30px;
 }
 
-@property --num {
-  syntax: "<integer>";
-  initial-value: 0;
-  inherits: false;
-}
-
-.here {
-  animation: counter 5s forwards ease-in-out;
-  counter-reset: num var(--num);
-  font: 800 40px system-ui;
-  padding: 2rem;
-}
-.here::after {
-  content: counter(num);
-}
-
-@keyframes counter {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 6000;
+.myUL {
+  display: inline-block;
+  --icon-space: 1.3em;
+  text-align: left;
+  list-style: none;
+  li:before {
+    content: "\f058"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+    color: $c-primary;
   }
 }

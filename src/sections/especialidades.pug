@@ -1,0 +1,26 @@
+.container
+  .titles
+    span
+    h2 Especialidades
+    span 
+  .iconbox
+    mixin item(src,text)
+      .item 
+        img(src=src, alt=text)
+        span= text
+    +item('src/assets/icons/clinic.svg','Clínica Médica')
+    +item('src/assets/icons/endocrinologia.svg','Endocrinologia')
+    +item('src/assets/icons/nutrologia.svg','Nutrologia')
+    +item('src/assets/icons/medintegrativa.svg','Medicina Integrativa')
+    +item('src/assets/icons/cardiologia.svg','Cardiologia')
+    +item('src/assets/icons/ginecologia.svg','Ginecologia')
+    +item('src/assets/icons/dermatologia.svg','Dermatologia')
+    +item('src/assets/icons/pediatria.svg','Pediatria')
+    +item('src/assets/icons/ortopedia.svg','Ortopedia')
+    +item('src/assets/icons/urologia.svg','Urologia')
+    +item('src/assets/icons/psiquiatria.svg','Psiquiatria')
+    +item('src/assets/icons/gastroenterologia.svg','Gastroenterologia')
+    +item('src/assets/icons/cirurgia.svg','Cirurgia Geral')
+    +item('src/assets/icons/otorrinolaringologia.svg','Otorrinolaringologia')
+    +item('src/assets/icons/nutricao.svg','Nutrição')
+    +item('src/assets/icons/psicologia.svg','Psicologia')

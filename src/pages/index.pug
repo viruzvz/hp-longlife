@@ -1,11 +1,18 @@
 extends /layouts/template.pug
+include ../components/counter.pug
 block main
   include ../sections/header.pug
   section
     include ../sections/consultasexames.pug
-  section
+  section.b-lowgray
     include ../sections/especialidadesdestaque.pug
   section
     include ../sections/examesemdestaque.pug
+  section.b-lowgray
+    +count('counter-animation','+ de 6.000 Pacientes Satisfeitos')
+  section.b-lowergray
+    include ../sections/especialidades.pug
   section
-    include ../components/status.pug
+    include ../sections/exames.pug
+  section.b-lowgray
+    +count('counter-animation2','Há mais de 5 anos no mercado')

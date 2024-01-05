@@ -1,0 +1,52 @@
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.animation {
+  animation: counter 5s forwards ease-in-out;
+  counter-reset: num var(--num);
+  font-weight: bold;
+  color: $c-primary;
+  font-size: $-xl5;
+  margin: 0;
+}
+
+.counter-animation::after {
+  content: counter(num);
+}
+
+.counter-animation2::after {
+  content: counter2(num);
+}
+
+.count-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text {
+    font-size: 12px;
+    color: #555;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 6000;
+  }
+}
+
+@keyframes counter2 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 5;
+  }
+}
