@@ -19,10 +19,10 @@
   }
   
   .hero-style3 {
-    background-blend-mode: screen;
-    // background-image: url("/src/assets/white.png"), url("/src/assets/mural.svg");
+    // background-blend-mode: screen;
+    background-image: url("/src/assets/bg-paralax.jpg");
     background-size: cover;
-    min-height: 200px;
+    min-height: 500px;
     background-position: center; 
     background-attachment: fixed;
   }

@@ -16,6 +16,7 @@
 @import "components/media-flex";
 @import "components/counter-animation";
 @import "components/iconbox";
+@import "components/carousel-box";
 
 
 // default page styles
@@ -40,5 +41,14 @@ section {
     margin-left: calc( var(--icon-space) * -1 );
     width: var(--icon-space);
     color: $c-primary;
+  }
+}
+
+.becarousel {
+  display: flex;
+  .item {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
   }
 }
