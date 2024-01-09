@@ -49,8 +49,15 @@
   color: $instagram;
 }
 
+.link-vz {
+  color: $c-primary !important;
+  &:hover {
+    color: $c-secondary;
+  }
+}
+
 .link-primary {
-  color: $c-primary;
+  color: $c-primary !important;
   &:hover {
     color: $c-secondary;
   }

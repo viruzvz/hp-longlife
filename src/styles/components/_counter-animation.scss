@@ -13,13 +13,13 @@
   margin: 0;
 }
 
-.counter-animation::after {
+.first-count::after,
+.second-count::after {
   content: counter(num);
 }
 
-.counter-animation2::after {
-  content: counter2(num);
-}
+.first-count { --num:6000; }
+.second-count { --num:5; }
 
 .count-wrapper {
   display: flex;
@@ -36,17 +36,5 @@
 @keyframes counter {
   from {
     --num: 0;
-  }
-  to {
-    --num: 6000;
-  }
-}
-
-@keyframes counter2 {
-  from {
-    --num: 0;
-  }
-  to {
-    --num: 5;
   }
 }

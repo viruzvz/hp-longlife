@@ -14,6 +14,20 @@
   display: flex;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-image: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: $c-primary;
+  font-weight: bold;
+  font-size: $-xl;
+}
+
 /* medium and up screens */
 @media (min-width: 768px) {
 

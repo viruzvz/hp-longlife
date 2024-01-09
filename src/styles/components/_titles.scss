@@ -31,9 +31,11 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
+  text-align: center;
   h2 {
-    font-size:16px;
+    font-size: $-lg;
     margin: 0;
+    font-weight: bold;
   }
   &:first-child span {
     width: 40px;
