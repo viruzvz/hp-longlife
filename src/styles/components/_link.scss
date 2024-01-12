@@ -103,7 +103,7 @@
   color: #fff;
   transition: $transition;
   border-radius: 0;
-
+  display: inline-flex;
   &:hover {
     color: #fff;
     background-color: adjust-hue($c-primary, 5deg);

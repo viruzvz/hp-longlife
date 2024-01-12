@@ -4,18 +4,18 @@ block main
   include ../sections/header.pug
   section
     include ../sections/consultasexames.pug
-  section.b-lowgray
+  section.b-lowgray#especialidadesdestaque
     include ../sections/especialidadesdestaque.pug
   section
     include ../sections/examesemdestaque.pug
   section.b-lowgray
-    +count('first-count','+ de 6.000 Pacientes Satisfeitos')
+    +count('first-count','pacientes satisfeitos')
   section.b-lowergray
     include ../sections/especialidades.pug
-  section
+  section#exames
     include ../sections/exames.pug
   section.b-lowgray
-    +count('second-count','Há mais de 5 anos no mercado')
+    +count('second-count','dias atendendo com satisfação nossos pacientes')
   section
     include ../sections/pacientes.pug
   include ../sections/paralax.pug
@@ -27,11 +27,11 @@ block main
     include ../sections/nossosdiferenciais.pug
   section.b-lowergray.d-none
     include ../sections/planodefidelidade.pug
-  section
-    include ../sections/espacos.pug
   section.b-lowergray
-    include ../sections/enderecos.pug
+    include ../sections/espacos.pug
   section
+    include ../sections/enderecos.pug
+  section.d-none
     include ../sections/qrcodes.pug
   footer.b-lowgray
     include ../sections/footer.pug

@@ -1,5 +1,5 @@
 @import "bootstrap";
-@import "fontawesome";
+// @import "fontawesome";
 
 // projetc components
 @import "components/variables";
@@ -48,12 +48,15 @@ section {
   text-align: left;
   list-style: none;
   li:before {
-    content: "\f058"; /* FontAwesome Unicode */
-    font-family: FontAwesome;
+    content: "";
+    background-image: url('/src/assets/icons/checker.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 15px;
     display: inline-block;
-    margin-left: calc( var(--icon-space) * -1 );
-    width: var(--icon-space);
-    color: $c-primary;
+    margin-left: calc(var(--icon-space) * -1);
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -63,5 +66,19 @@ section {
     width: 25%;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .copyright {
+    &:last-child {
+      text-align: end;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .copyright {
+    text-align: center;
   }
 }

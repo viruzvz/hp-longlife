@@ -5,10 +5,17 @@
   }
   
   .hero-style {
-    background-image: url("/src/assets/hero.jpg");
+    background-image: url("/src/assets/hero.webp");
     background-size: cover;
     min-height: 600px;
     background-position: center; 
+    @include media-breakpoint-down(lg) {
+      background-image: url("/src/assets/bg-paralax.webp");
+      background-attachment: fixed;
+      .break-line {
+        display: inline-block;
+      }
+    }
   }
   
   .hero-style2 {
@@ -20,7 +27,7 @@
   
   .hero-style3 {
     // background-blend-mode: screen;
-    background-image: url("/src/assets/bg-paralax.jpg");
+    background-image: url("/src/assets/bg-paralax.webp");
     background-size: cover;
     min-height: 500px;
     background-position: center; 

@@ -7,15 +7,12 @@
     .col-md-6
       figure.cards.card-border
         .Embed.Embed--16by9
-          img.border-radius5.u-fitCover(src="src/assets/exames-cardiologicos.jpg" alt='Consultas')
+          img.border-radius5.u-fitCover(src="src/assets/exames-cardiologicos.webp" alt='Consultas')
         figcaption Exames Cardiológicos
     .col-md-6
       figure.cards.card-border
         .Embed.Embed--16by9
-          img.border-radius5.u-fitCover(src="src/assets/ultrassonografia.jpg" alt='Exames')
+          img.border-radius5.u-fitCover(src="src/assets/ultrassonografia.webp" alt='Exames')
         figcaption Ultrassonografia
     .col-12 
-      .text-center 
-        a.btn.btn-primaryTheme(href="#" title="Agende sua visita") 
-          i.fa-brands.fa-whatsapp
-          | &nbsp; Agendar agora
+      include ../components/button.pug
