@@ -24,6 +24,11 @@
     margin-bottom: 15px;
   }
 }
+
+.controls {
+  display: none;
+}
+
 @include media-breakpoint-down(lg) {
   .controls {
     display: block;
