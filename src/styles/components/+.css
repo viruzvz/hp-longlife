@@ -4,6 +4,7 @@
 @import "_counter-animation.scss";
 @import "_embed.scss";
 @import "_hero.scss";
+@import "_iconbox.scss";
 @import "_link.scss";
 @import "_media-flex.scss";
 @import "_nav-global.scss";
@@ -12,4 +13,3 @@
 @import "_titles.scss";
 @import "_triad.scss";
 @import "_variables.scss";
-@import "iconbox.scss";

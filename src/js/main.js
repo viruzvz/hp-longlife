@@ -1,5 +1,9 @@
 // Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+// import * as bootstrap from 'bootstrap'
+
+import 'bootstrap/js/dist/modal';
+// import 'bootstrap/js/dist/carousel';
+
 
 // Remove the transition class
 // const count = document.querySelector('.status-fire-js');
@@ -42,19 +46,30 @@ for (let element of elements) {
 }
 
 
-// Mudanças no carousel bootstrap, controle de cards em vez de slides
-let items = document.querySelectorAll('.carousel .carousel-item')
+// // Mudanças no carousel bootstrap, controle de cards em vez de slides
+// let items = document.querySelectorAll('.carousel .carousel-item')
 
-		items.forEach((el) => {
-			const minPerSlide = 4
-			let next = el.nextElementSibling
-			for (var i=1; i<minPerSlide; i++) {
-				if (!next) {
-            // wrap carousel by using first child
-            next = items[0]
-        }
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
-    }
-})
+// 		items.forEach((el) => {
+// 			const minPerSlide = 4
+// 			let next = el.nextElementSibling
+// 			for (var i=1; i<minPerSlide; i++) {
+// 				if (!next) {
+//             // wrap carousel by using first child
+//             next = items[0]
+//         }
+//         let cloneChild = next.cloneNode(true)
+//         el.appendChild(cloneChild.children[0])
+//         next = next.nextElementSibling
+//     }
+// })
+
+// controla na página about.pug o scroll que contem overflow somente no responsivo
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+  document.getElementById('box-js').scrollLeft += 20;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('box-js').scrollLeft -= 20;
+};

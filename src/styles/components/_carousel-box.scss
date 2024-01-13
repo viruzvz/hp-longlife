@@ -1,18 +1,18 @@
-@media (max-width: 767px) {
-  .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  .carousel-inner .carousel-item > div:first-child {
-    display: block;
-    width: 100%;
-  }
-}
+// @media (max-width: 767px) {
+//   .carousel-inner .carousel-item > div {
+//     display: none;
+//   }
+//   .carousel-inner .carousel-item > div:first-child {
+//     display: block;
+//     width: 100%;
+//   }
+// }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-  display: flex;
-}
+// .carousel-inner .carousel-item.active,
+// .carousel-inner .carousel-item-next,
+// .carousel-inner .carousel-item-prev {
+//   display: flex;
+// }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
   background-image: none;

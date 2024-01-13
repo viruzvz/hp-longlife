@@ -3,10 +3,10 @@
     span
     h2 Especialidades
     span 
-  .iconbox
+  .iconbox(id="box-js")
     mixin item(src,text)
       .item 
-        img(src=src, alt=text)
+        img(src=src, alt=text, width="50px", heigh="52px")
         span= text
     +item('src/assets/icons/clinic.svg','Clínica Médica')
     +item('src/assets/icons/endocrinologia.svg','Endocrinologia')
@@ -24,6 +24,11 @@
     +item('src/assets/icons/otorrinolaringologia.svg','Otorrinolaringologia')
     +item('src/assets/icons/nutricao.svg','Nutrição')
     +item('src/assets/icons/psicologia.svg','Psicologia')
+  .controls
+    a.me-5.arrow-left.arrow(id="slideLeft")
+      img(src="src/assets/icons/chevron-left.svg", alt="Esquerda", width="20px")
+    a.ms-5.arrow-right.arrow(id="slideRight")
+      img(src="src/assets/icons/chevron-right.svg", alt="Direita", width="20px")
   .row 
     .col-12 
       include ../components/button.pug

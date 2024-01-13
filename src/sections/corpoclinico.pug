@@ -1,8 +1,27 @@
+mixin col-card(src, name, text, text2)
+  .col-md-4
+    .card.mb-5.border-0
+      figure.cards.card-border.mb-0.cards-fix(aria-label="Persona")
+        img.border-radius5.u-fitCover(src=src alt=name width="143px" heigh="143px")
+        figcaption 
+          p= name
+          .fw-light
+            p.mb-1= text
+            small= text2
 .container 
   .titles
     span
     h2 Corpo Clínico
     span
+  .row
+    +col-card('src/assets/doctors/Tiago.webp','Dr. Tiago Kratka','Médico Integrativo','CRM-DF 199242')
+    +col-card('src/assets/doctors/Ellen.webp','Dra. Ellen Saraiva','Ultrossonografista','CRM-DF 26764')
+    +col-card('src/assets/doctors/Deyvid.webp','Dr. Deyvid Medeiros','Nutricionista','Clínico / Esportivo')
+
+    .col-12 
+      include ../components/button.pug
+
+
   //- .overflow-responsive
   //-   .d-flex
   //-     .item
@@ -22,45 +41,70 @@
   //-         img.border-radius5.u-fitCover(src="src/assets/doctors/Ellipse4.png" alt='Exames')
   //-         figcaption Ultrassonografia
 
-  .container.text-center
-    .row.mx-auto.my-auto.justify-content-center
-      #recipeCarousel.carousel.slide.mb-5(data-bs-ride='carousel')
-        .carousel-inner(role='listbox')
-          .carousel-item(role="presentation").active
-            .col-md-4
-              .card.mb-5.border-0
-                figure.cards.card-border.mb-0.cards-fix
-                  img.border-radius5.u-fitCover(src="src/assets/doctors/Tiago.webp" alt='Dr. Tiago Kratka')
-                  figcaption 
-                    p Dr. Tiago Kratka
-                    .fw-light
-                      p.mb-1 Médico Integrativo 
-                      small CRM-DF 199242
-          .carousel-item(role="presentation")
-            .col-md-4
-              .card.mb-5.border-0
-                figure.cards.card-border.mb-0.cards-fix
-                  img.border-radius5.u-fitCover(src="src/assets/doctors/Ellen.webp" alt='Dra. Ellen')
-                  figcaption 
-                    p Dra. Ellen Saraiva
-                    .fw-light
-                      p.mb-1 Ultrossonografista
-                      small CRM-DF 26764
-          .carousel-item(role="presentation")
-            .col-md-4
-              .card.mb-5.border-0
-                figure.cards.card-border.mb-0.cards-fix
-                  img.border-radius5.u-fitCover(src="src/assets/doctors/Deyvid.webp" alt='Dr. Deyvid Medeiros')
-                  figcaption 
-                    p Dr. Deyvid Medeiros
-                    .fw-light
-                      p.mb-1 Nutricionista
-                      small Clínico / Esportivo
-        a.carousel-control-prev.bg-transparent.w-aut(href='#recipeCarousel' role='button' data-bs-slide='prev' title='Anterior')
-          span.carousel-control-prev-icon(aria-hidden='true')
-            img(src="src/assets/icons/chevron-left.svg", alt="Esquerda", width="20px")
-        a.carousel-control-next.bg-transparent.w-aut(href='#recipeCarousel' role='button' data-bs-slide='next' title='Próximo')
-          span.carousel-control-next-icon(aria-hidden='true')
-            img(src="src/assets/icons/chevron-right.svg", alt="Direita", width="20px")
-      .col-12 
-        include ../components/button.pug
+  //- .container.text-center
+  //-   .row.mx-auto.my-auto.justify-content-center
+  //-     #recipeCarousel.carousel.slide.mb-5(data-bs-ride='carousel')
+  //-       .carousel-inner(role='listbox')
+  //-         .carousel-item(role="presentation").active
+  //-           .col-md-4
+  //-             .card.mb-5.border-0
+  //-               figure.cards.card-border.mb-0.cards-fix
+  //-                 img.border-radius5.u-fitCover(src="src/assets/doctors/Tiago.webp" alt='Dr. Tiago Kratka' width="143px" heigh="143px")
+  //-                 figcaption 
+  //-                   p Dr. Tiago Kratka
+  //-                   .fw-light
+  //-                     p.mb-1 Médico Integrativo 
+  //-                     small CRM-DF 199242
+  //-         .carousel-item(role="presentation")
+  //-           .col-md-4
+  //-             .card.mb-5.border-0
+  //-               figure.cards.card-border.mb-0.cards-fix
+  //-                 img.border-radius5.u-fitCover(src="src/assets/doctors/Ellen.webp" alt='Dra. Ellen' width="143px" heigh="143px")
+  //-                 figcaption 
+  //-                   p Dra. Ellen Saraiva
+  //-                   .fw-light
+  //-                     p.mb-1 Ultrossonografista
+  //-                     small CRM-DF 26764
+  //-         .carousel-item(role="presentation")
+  //-           .col-md-4
+  //-             .card.mb-5.border-0
+  //-               figure.cards.card-border.mb-0.cards-fix
+  //-                 img.border-radius5.u-fitCover(src="src/assets/doctors/Deyvid.webp" alt='Dr. Deyvid Medeiros' width="143px" heigh="143px")
+  //-                 figcaption 
+  //-                   p Dr. Deyvid Medeiros
+  //-                   .fw-light
+  //-                     p.mb-1 Nutricionista
+  //-                     small Clínico / Esportivo
+  //-       a.carousel-control-prev.bg-transparent.w-aut(href='#recipeCarousel' role='button' data-bs-slide='prev' title='Anterior')
+  //-         span.carousel-control-prev-icon(aria-hidden='true')
+  //-           img(src="src/assets/icons/chevron-left.svg", alt="Esquerda", width="20px")
+  //-       a.carousel-control-next.bg-transparent.w-aut(href='#recipeCarousel' role='button' data-bs-slide='next' title='Próximo')
+  //-         span.carousel-control-next-icon(aria-hidden='true')
+  //-           img(src="src/assets/icons/chevron-right.svg", alt="Direita", width="20px")
+  //- #carouselExampleIndicators.carousel.slide
+  //-   .carousel-indicators
+  //-     button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+  //-     button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+  //-     button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+  //-   .carousel-inner
+  //-     .carousel-item.active
+  //-       .row
+  //-         +col-card('src/assets/doctors/Tiago.webp','Dr. Tiago Kratka','Médico Integrativo','CRM-DF 199242')
+  //-         +col-card('src/assets/doctors/Ellen.webp','Dra. Ellen Saraiva','Ultrossonografista','CRM-DF 26764')
+  //-         +col-card('src/assets/doctors/Deyvid.webp','Dr. Deyvid Medeiros','Nutricionista','Clínico / Esportivo')
+  //-     .carousel-item
+  //-       .row
+  //-         +col-card('src/assets/doctors/Tiago.webp','Dr. Tiago Kratka','Médico Integrativo','CRM-DF 199242')
+  //-         +col-card('src/assets/doctors/Ellen.webp','Dra. Ellen Saraiva','Ultrossonografista','CRM-DF 26764')
+  //-         +col-card('src/assets/doctors/Deyvid.webp','Dr. Deyvid Medeiros','Nutricionista','Clínico / Esportivo')
+  //-     .carousel-item
+  //-       .row
+  //-         +col-card('src/assets/doctors/Tiago.webp','Dr. Tiago Kratka','Médico Integrativo','CRM-DF 199242')
+  //-         +col-card('src/assets/doctors/Ellen.webp','Dra. Ellen Saraiva','Ultrossonografista','CRM-DF 26764')
+  //-         +col-card('src/assets/doctors/Deyvid.webp','Dr. Deyvid Medeiros','Nutricionista','Clínico / Esportivo')
+  //-   button.carousel-control-prev(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='prev')
+  //-     span.carousel-control-prev-icon(aria-hidden='true')
+  //-     span.visually-hidden Previous
+  //-   button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
+  //-     span.carousel-control-next-icon(aria-hidden='true')
+  //-     span.visually-hidden Next
