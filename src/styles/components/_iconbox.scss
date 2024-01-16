@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  @include media-breakpoint-down(lg) {
+  @media (max-width: 991.98px) {
     flex-wrap: nowrap;
     justify-content: start;
     overflow-y: scroll;
@@ -29,7 +29,7 @@
   display: none;
 }
 
-@include media-breakpoint-down(lg) {
+@media (max-width: 991.98px) {
   .controls {
     display: block;
     text-align: center;

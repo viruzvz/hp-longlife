@@ -1,7 +1,7 @@
 .media-flex {
   display: flex;
   margin-bottom: 30px;
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     height: 250px;
     .image {
       width: 350px;
@@ -13,7 +13,7 @@
       width: 100%;
     }
   }
-  @include media-breakpoint-down(lg) {
+  @media (max-width: 991.98px) {
     flex-direction: column;
     .media-flexImg {
       margin-bottom: 15px;
@@ -24,7 +24,7 @@
 }
 
 .media--reverse {
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     flex-direction: row-reverse;
     .image {
       margin-right: 0;
@@ -47,13 +47,13 @@
   align-items: flex-start;
   justify-content: space-between;
   text-align: justify;
-  @include media-breakpoint-down(lg) {
+  @media (max-width: 991.98px) {
     .control-btn {
       width: 100%;
       text-align: center;
     }
   }
-  @include media-breakpoint-up(lg) {
+  @media (min-width: 992px) {
     height: 100%;
   }
 }

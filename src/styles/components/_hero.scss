@@ -9,7 +9,8 @@
     background-size: cover;
     min-height: 600px;
     background-position: center; 
-    @include media-breakpoint-down(lg) {
+    @media (max-width: 991.98px) {
+      min-height: 400px;
       background-image: url("/src/assets/bg-paralax.webp");
       background-attachment: fixed;
       .break-line {

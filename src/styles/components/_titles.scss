@@ -32,6 +32,9 @@
   align-items: center;
   padding-bottom: 30px;
   text-align: center;
+  @media (max-width: 991.98px) {
+    padding-bottom: 15px;
+  }
   h2 {
     font-size: $-lg;
     margin: 0;
